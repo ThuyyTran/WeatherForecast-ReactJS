@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+// import Head from 'next/head'
+// import Image from 'next/image'
+// import styles from '../styles/Home.module.css'
 import SearchBox from '../components/SearchBox'
 import SlideShow from '../components/SlideShow'
 import cities from "../lib/city.list.json";
@@ -61,10 +61,6 @@ export default function Home({city1,city2,city3,city4}){
   }
   return(
       <div>
-        <head>
-          <title>Weather Forecast</title>
-        </head>
-
         <div className='home'>
           <div className='container'>
             <SearchBox/>
@@ -72,5 +68,5 @@ export default function Home({city1,city2,city3,city4}){
           </div>
         </div>
       </div>
-  )
+  );
 }
